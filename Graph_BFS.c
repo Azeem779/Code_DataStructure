@@ -93,7 +93,7 @@ void create_graph()
         scanf("%d %d",&ori,&des);
         if(ori==-1 && des==-1)
             break;
-        if(ori>n||ori<=0||des>n||des<=0)
+        if(ori>=n||ori<0||des>=n||des<0)
         {
             printf("Edge does not exist.\n");
             i--;
